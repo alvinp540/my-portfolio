@@ -62,7 +62,4 @@ It features a clean, modern design with interactive hover effects, a gradient he
 
 ---
 
-## 🌍 Deployment (GitHub Pages)
-
-This portfolio is hosted using **GitHub Pages** via the `gh-pages` branch.
 
