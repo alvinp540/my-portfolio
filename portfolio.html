@@ -4,51 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Alvin Sarisar</title>
- <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Alvin Sarisar</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Portfolio Grid -->
-  <section class="portfolio">
-    <h2>My Projects & Achievements</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="photos\computerrepair.jpeg" alt="Computer & Mobile Repair">
-        <h3>Computer & Mobile Repair</h3>
-        <p>Repaired and maintained over 30 devices, including hardware troubleshooting, software installation, and diagnostics.</p>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9507aa749c.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+ <!--  Navbar -->
+  <nav class="bg-purple-950 bg-opacity-70 shadow-md backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-2 text-white hover:text-yellow-300 transition">
+        <i class="fa-regular fa-circle-user text-3xl"></i>
+        <span class="text-2xl font-semibold">Saritech</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="flex space-x-6 text-white font-medium">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="portfolio.html" class="hover:text-yellow-300">Portfolio</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300 border-b-2 border-yellow-300 pb-1">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--  Portfolio Grid -->
+  <section class="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-600 text-white py-20">
+    <div class="max-w-screen-xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 relative inline-block">
+        My Projects & Achievements
+        <!-- Animated underline -->
+        <span class="block w-670 h-1 bg-yellow-400 mx-auto mt-3 rounded-full animate-pulse"></span>
+      </h2>
+
+      <!-- Grid Container -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <!-- Reusable Card Component -->
+        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
+          <img src="images\computerrepair.jpeg" 
+               alt="Computer & Mobile Repair"
+               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Computer & Mobile Repair</h3>
+          <p class="text-gray-200 text-sm">Repaired and maintained over 30 devices, including hardware troubleshooting, software installation, and diagnostics.</p>
+        </div>
+
+        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
+          <img src="images\1080p Cameras Installation Los Angeles.jpeg" 
+               alt="CCTV Installations"
+               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2 text-yellow-400">CCTV Installations</h3>
+          <p class="text-gray-200 text-sm">Premier CCTV installations for residential homes, ensuring system reliability and security coverage.</p>
+        </div>
+
+        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
+          <img src="images\electricfence.jpeg" 
+               alt="Electric Fence Projects"
+               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Electric Fence Projects</h3>
+          <p class="text-gray-200 text-sm">Installed and configured electric fences for residential security, integrating energizers and conductors effectively.</p>
+        </div>
+
+        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
+          <img src="images\softwareproj.jpeg" 
+               alt="Software Engineering Training"
+               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Software Engineering Projects</h3>
+          <p class="text-gray-200 text-sm">Currently pursuing Software Engineering, working on web applications and programming solutions for real-world use.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="photos\1080p Cameras Installation Los Angeles.jpeg" alt="CCTV Installations">
-        <h3>CCTV Installations</h3>
-        <p>Premier CCTV installations for residential homes, ensuring system reliability and security coverage.</p>
-      </div>
-      <div class="card">
-        <img src="photos\electricfence.jpeg" alt="Electric Fence Projects">
-        <h3>Electric Fence Projects</h3>
-        <p>Installed and configured electric fences for residential security, integrating energizers and conductors effectively.</p>
-      </div>
-      <div class="card">
-        <img src="photos\softwareproj.jpeg" alt="Software Engineering Training">
-        <h3>Software Engineering Projects</h3>
-        <p>Currently pursuing Software Engineering, working on web applications and programming solutions for real-world use.</p>
-      </div>
+       <span class="block w-70 h-1 bg-yellow-400 mx-auto mt-3 rounded-full animate-pulse"></span>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Alvin Sarisar | Portfolio Website</p>
+ <!--  Footer -->
+  <footer class="bg-purple-950 py-10 shadow-inner text-white">
+    <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+      
+      <!-- Brand Info -->
+      <div>
+        <h3 class="text-2xl font-bold text-yellow-400 mb-4">Alvin Sarisar</h3>
+        <p>Your Tech Expert — bridging hardware and software innovation.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="portfolio.html" class="hover:text-yellow-400">Portfolio</a></li>
+          <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+          <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div>
+        <h4 class="font-semibold mb-4">Follow Me</h4>
+        <div class="flex flex-col space-y-2 items-center md:items-start">
+          <a href="#" class="hover:text-yellow-400"><i class="fab fa-facebook"></i> Alvinpofficial</a>
+          <a href="https://x.com/AlvinParsaloi" class="hover:text-yellow-400"><i class="fab fa-twitter"></i> @alvinpofficial</a>
+          <a href="https://www.instagram.com/alvin_sarisar/" class="hover:text-yellow-400"><i class="fab fa-instagram"></i> alvin_sarisar</a>
+          <a href="https://github.com/alvinp540" class="hover:text-yellow-400"><i class="fab fa-github"></i> alvinp540</a>
+          <a href="https://linkedin.com/in/alvin-parsaloi-311b08266" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i> alvinsarisar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center text-sm mt-8">
+      &copy; 2025 Saritech Solutions Ltd. All rights reserved.
+    </div>
   </footer>
+
 </body>
 </html>
-
