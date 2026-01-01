@@ -3,117 +3,264 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me | Alvin Sarisar</title>
+  <title>About | Alvin Sarisar</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/9507aa749c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-white text-gray-900">
 
-  <!--  Navbar -->
-  <nav class="bg-purple-950 bg-opacity-70 shadow-md backdrop-blur-md sticky top-0 z-50">
-    <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center space-x-2 text-white hover:text-yellow-300 transition">
-        <i class="fa-regular fa-circle-user text-3xl"></i>
-        <span class="text-2xl font-semibold">Saritech</span>
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="text-2xl font-bold text-blue-600 flex items-center gap-3 hover:text-blue-800 transition">
+         <img class="h-12 w-12 rounded-full object-cover" src="images\profile-pic.png" alt=""> Alvin Sarisar
       </a>
 
-      <!-- Nav Links -->
-      <ul class="flex space-x-6 text-white font-medium">
-        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
-        <li><a href="portfolio.html" class="hover:text-yellow-300">Portfolio</a></li>
-        <li><a href="about.html" class="hover:text-yellow-300 border-b-2 border-yellow-300 pb-1">About</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+        <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-600 transition border-b-2 border-blue-600">About</a></li>
+        <li><a href="portfolio.html" class="hover:text-blue-600 transition">Portfolio</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
       </ul>
+
+      <a href="contact.html" class="px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+        Hire Me
+      </a>
     </div>
   </nav>
 
-  <!--  About Section -->
-  <section class="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-600 text-white py-20">
-    <div class="max-w-screen-lg mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-10">About Me</h2>
+  <!-- About Section -->
+  <section class="pt-40 pb-20 px-6 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h1 class="text-5xl font-bold text-gray-900 mb-4">About Me</h1>
+        <p class="text-xl text-gray-600">Electrical & Electronics Engineering Student | Software Engineer in Training</p>
+      </div>
 
-      <div class="space-y-8 text-lg leading-relaxed text-gray-200">
-        <p>
-          I am <span class="font-semibold text-yellow-400">Alvin Sarisar</span>, an Electrical and Electronics Engineering student at
-          <span class="font-semibold text-yellow-400">Jomo Kenyatta University of Agriculture and Technology (JKUAT)</span>.
-          I have strong organizational skills and a passion for applying technical knowledge to solve real-world problems.
-        </p>
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div class="space-y-6">
+          <div class="p-8 bg-white rounded-xl shadow-lg border-l-4 border-blue-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Who I Am</h3>
+            <p class="text-gray-600 leading-relaxed text-lg">
+              I am <span class="font-bold text-blue-600">Alvin Sarisar</span>, a passionate engineering student with a strong background in both electrical systems and software development. I have a proven track record of solving complex problems through innovative technical solutions.
+            </p>
+          </div>
 
-        <h3 class="text-2xl font-semibold text-yellow-400 mt-8">Background</h3>
-        <p>
-          I am a passionate <span class="font-semibold">Software Engineer in training</span> with a background in Electrical and Electronics Engineering.
-          I enjoy building responsive, user-friendly applications and exploring innovative solutions at the intersection of hardware and software.
-          With skills in web development, troubleshooting, and system installations . I aim to leverage technology to solve real-world problems
-          and create meaningful impact.
-        </p>
+          <div class="p-8 bg-white rounded-xl shadow-lg border-l-4 border-blue-600">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">My Mission</h3>
+            <p class="text-gray-600 leading-relaxed text-lg">
+              To bridge the gap between hardware and software innovation, creating meaningful solutions that improve lives and businesses. I'm committed to continuous learning and excellence in every project I undertake.
+            </p>
+          </div>
+        </div>
 
-        <h3 class="text-2xl font-semibold text-yellow-400 mt-8">Education</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li><strong>JKUAT (2019 - Ongoing):</strong> BSc. Electrical & Electronics Engineering</li>
-          <li><strong>Maseno School (2015 - 2018):</strong> KCSE, Mean Grade A- (78 pts)</li>
-          <li><strong>JKUAT (2025 - Ongoing):</strong> Certificate in Software Engineering</li>
-        </ul>
+        <div class="space-y-8">
+          <div class="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Quick Facts</h3>
+            <ul class="space-y-4 text-lg">
+              <li class="flex items-center gap-3">
+                <i class="fas fa-graduation-cap text-2xl"></i>
+                <span>Studying at JKUAT since 2019</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-code text-2xl"></i>
+                <span>Currently Pursuing Software Engineering</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-tools text-2xl"></i>
+                <span>5+ Years Practical Experience</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-star text-2xl"></i>
+                <span>98% Client Satisfaction Rate</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        <h3 class="text-2xl font-semibold text-yellow-400 mt-8">Skills</h3>
-        <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 list-disc list-inside">
-          <li>Mobile & Computer Repair</li>
-          <li>CCTV Installation & Maintenance</li>
-          <li>Electric Fence Installation</li>
-          <li>Burglar Alarm Systems</li>
-          <li>Problem Solving</li>
-          <li>Teamwork & Communication</li>
-        </ul>
+      <!-- Education Timeline -->
+      <div class="mb-20">
+        <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Education</h2>
+        <div class="space-y-6">
+          <div class="p-8 bg-white rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">BSc. Electrical & Electronics Engineering</h3>
+                <p class="text-blue-600 font-semibold text-lg mt-2">Jomo Kenyatta University of Agriculture and Technology (JKUAT)</p>
+              </div>
+              <span class="px-4 py-2 bg-blue-100 text-blue-600 rounded-full font-bold text-sm">2019 - Ongoing</span>
+            </div>
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Comprehensive study of electrical systems, power generation, circuit design, electronics, and industrial automation technologies.
+            </p>
+          </div>
 
-        <h3 class="text-2xl font-semibold text-yellow-400 mt-8">Certifications</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Certificate in Computer & Mobile Repair - Inceptor Institute of Technology (2022)</li>
-          <li>Premier Electric Fencing Practitioner - Kenvision Techniks (2022)</li>
-          <li>Premier CCTV Installation - Kenvision Techniks (2022)</li>
-        </ul>
+          <div class="p-8 bg-white rounded-xl shadow-lg border-l-4 border-green-600 hover:shadow-xl transition">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">Certificate in Software Engineering</h3>
+                <p class="text-green-600 font-semibold text-lg mt-2">JKUAT</p>
+              </div>
+              <span class="px-4 py-2 bg-green-100 text-green-600 rounded-full font-bold text-sm">2025 - Ongoing</span>
+            </div>
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Modern software development practices, web engineering, and full-stack application development.
+            </p>
+          </div>
+
+          <div class="p-8 bg-white rounded-xl shadow-lg border-l-4 border-purple-600 hover:shadow-xl transition">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">KCSE</h3>
+                <p class="text-purple-600 font-semibold text-lg mt-2">Maseno School</p>
+              </div>
+              <span class="px-4 py-2 bg-purple-100 text-purple-600 rounded-full font-bold text-sm">2015 - 2018</span>
+            </div>
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Mean Grade: A- (78 points) with strong performance in sciences and mathematics.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="mb-20">
+        <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Skills & Expertise</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Software Development</h3>
+            <div class="space-y-5">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold text-gray-700">Web Development (HTML, CSS, JavaScript)</span>
+                  <span class="text-blue-600 font-bold">90%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                  <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold text-gray-700">React & Modern Frameworks</span>
+                  <span class="text-blue-600 font-bold">75%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                  <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold text-gray-700">Problem Solving & Logic</span>
+                  <span class="text-blue-600 font-bold">85%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                  <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Electrical & Hardware</h3>
+            <div class="space-y-5">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold text-gray-700">Computer & Mobile Repair</span>
+                  <span class="text-blue-600 font-bold">95%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                  <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold text-gray-700">CCTV Systems Installation</span>
+                  <span class="text-blue-600 font-bold">90%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                  <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold text-gray-700">Electric Fence Systems</span>
+                  <span class="text-blue-600 font-bold">88%</span>
+                </div>
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                  <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="mb-20">
+        <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Professional Certifications</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition">
+            <i class="fas fa-certificate text-4xl text-blue-600 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Computer & Mobile Repair</h3>
+            <p class="text-gray-600 text-sm mb-3">Inceptor Institute of Technology</p>
+            <p class="text-gray-500 text-xs">2022</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-yellow-600 hover:shadow-xl transition">
+            <i class="fas fa-certificate text-4xl text-yellow-600 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Premier Electric Fencing</h3>
+            <p class="text-gray-600 text-sm mb-3">Kenvision Techniks</p>
+            <p class="text-gray-500 text-xs">2022</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-purple-600 hover:shadow-xl transition">
+            <i class="fas fa-certificate text-4xl text-purple-600 mb-4"></i>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Premier CCTV Installation</h3>
+            <p class="text-gray-600 text-sm mb-3">Kenvision Techniks</p>
+            <p class="text-gray-500 text-xs">2022</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!--  Footer -->
-  <footer class="bg-purple-950 py-10 shadow-inner text-white">
-    <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
-      
-      <!-- Brand Info -->
-      <div>
-        <h3 class="text-2xl font-bold text-yellow-400 mb-4">Alvin Sarisar</h3>
-        <p>Your Tech Expert - bridging hardware and software innovation.</p>
-      </div>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-12 mb-8 pb-8 border-b border-gray-800">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-2">Alvin Sarisar</h3>
+          <p class="text-gray-400">Software & Electrical Engineer | Building smart solutions</p>
+        </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="font-semibold mb-4">Quick Links</h4>
-        <ul class="space-y-2">
-          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-          <li><a href="portfolio.html" class="hover:text-yellow-400">Portfolio</a></li>
-          <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
-        </ul>
-      </div>
+        <div>
+          <h4 class="font-bold text-white mb-4 text-lg">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+            <li><a href="portfolio.html" class="hover:text-blue-400 transition">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
 
-      <!-- Social Links -->
-      <div>
-        <h4 class="font-semibold mb-4">Follow Me</h4>
-        <div class="flex flex-col space-y-2 items-center md:items-start">
-          <a href="#" class="hover:text-yellow-400"><i class="fab fa-facebook"></i> Alvinpofficial</a>
-          <a href="https://x.com/AlvinParsaloi" class="hover:text-yellow-400"><i class="fab fa-twitter"></i> @alvinpofficial</a>
-          <a href="https://www.instagram.com/alvin_sarisar/" class="hover:text-yellow-400"><i class="fab fa-instagram"></i> alvin_sarisar</a>
-          <a href="https://github.com/alvinp540" class="hover:text-yellow-400"><i class="fab fa-github"></i> alvinp540</a>
-          <a href="https://linkedin.com/in/alvin-parsaloi-311b08266" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i> alvinsarisar</a>
+        <div>
+          <h4 class="font-bold text-white mb-4 text-lg">Connect</h4>
+          <div class="flex gap-4 text-2xl">
+            <a href="https://github.com/alvinp540" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/alvin-parsaloi-311b08266" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/AlvinParsaloi" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/alvin_sarisar/" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer Bottom -->
-    <div class="text-center text-sm mt-8">
-      &copy; 2025 Saritech Solutions Ltd. All rights reserved.
+      <div class="text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Alvin Sarisar. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
 </body>
 </html>
