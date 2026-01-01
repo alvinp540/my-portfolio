@@ -1,122 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Alvin Sarisar</title>
-
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/9507aa749c.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
 
- <!--  Navbar -->
-  <nav class="bg-purple-950 bg-opacity-70 shadow-md backdrop-blur-md sticky top-0 z-50">
-    <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center space-x-2 text-white hover:text-yellow-300 transition">
-        <i class="fa-regular fa-circle-user text-3xl"></i>
-        <span class="text-2xl font-semibold">Saritech</span>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+       <a href="index.html" class="text-2xl font-bold text-blue-600 flex items-center gap-3 hover:text-blue-800 transition">
+         <img class="h-12 w-12 rounded-full object-cover" src="images\profile-pic.png" alt=""> Alvin Sarisar
       </a>
 
-      <!-- Navigation Links -->
-      <ul class="flex space-x-6 text-white font-medium">
-        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
-        <li><a href="portfolio.html" class="hover:text-yellow-300">Portfolio</a></li>
-        <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-300 border-b-2 border-yellow-300 pb-1">Contact</a></li>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+        <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="portfolio.html" class="hover:text-blue-600 transition border-b-2 border-blue-600">Portfolio</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
       </ul>
+
+      <a href="contact.html" class="px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+        Hire Me
+      </a>
     </div>
   </nav>
 
-  <!--  Portfolio Grid -->
-  <section class="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-600 text-white py-20">
-    <div class="max-w-screen-xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12 relative inline-block">
-        My Projects & Achievements
-        <!-- Animated underline -->
-        <span class="block w-670 h-1 bg-yellow-400 mx-auto mt-3 rounded-full animate-pulse"></span>
-      </h2>
-
-      <!-- Grid Container -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        
-        <!-- Reusable Card Component -->
-        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
-          <img src="images\computerrepair.jpeg" 
-               alt="Computer & Mobile Repair"
-               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Computer & Mobile Repair</h3>
-          <p class="text-gray-200 text-sm">Repaired and maintained over 30 devices, including hardware troubleshooting, software installation, and diagnostics.</p>
-        </div>
-
-        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
-          <img src="images\1080p Cameras Installation Los Angeles.jpeg" 
-               alt="CCTV Installations"
-               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold mb-2 text-yellow-400">CCTV Installations</h3>
-          <p class="text-gray-200 text-sm">Premier CCTV installations for residential homes, ensuring system reliability and security coverage.</p>
-        </div>
-
-        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
-          <img src="images\electricfence.jpeg" 
-               alt="Electric Fence Projects"
-               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Electric Fence Projects</h3>
-          <p class="text-gray-200 text-sm">Installed and configured electric fences for residential security, integrating energizers and conductors effectively.</p>
-        </div>
-
-        <div class="bg-purple-950 bg-opacity-40 p-6 rounded-xl shadow-lg hover:shadow-yellow-400/40 transition transform hover:-translate-y-2">
-          <img src="images\softwareproj.jpeg" 
-               alt="Software Engineering Training"
-               class="w-full h-56 object-cover rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
-          <h3 class="text-xl font-semibold mb-2 text-yellow-400">Software Engineering Projects</h3>
-          <p class="text-gray-200 text-sm">Currently pursuing Software Engineering, working on web applications and programming solutions for real-world use.</p>
-        </div>
-      </div>
-       <span class="block w-70 h-1 bg-yellow-400 mx-auto mt-3 rounded-full animate-pulse"></span>
+  <!-- Portfolio Header -->
+  <section class="pt-40 pb-16 px-6 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl font-bold text-gray-900 mb-4">My Projects & Achievements</h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Showcasing my expertise in hardware installations, security systems, and software engineering solutions
+      </p>
     </div>
   </section>
 
- <!--  Footer -->
-  <footer class="bg-purple-950 py-10 shadow-inner text-white">
-    <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
-      
-      <!-- Brand Info -->
-      <div>
-        <h3 class="text-2xl font-bold text-yellow-400 mb-4">Alvin Sarisar</h3>
-        <p>Your Tech Expert — bridging hardware and software innovation.</p>
-      </div>
+  <!-- Projects Grid -->
+  <section class="py-20 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition transform border border-gray-200">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+            <img src="images/computerrepair.jpeg" alt="Computer Repair" class="h-48 w-full object-cover">
+          </div>
+          <div class="p-8">
+            <div class="flex gap-2 mb-4">
+              <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs font-bold">Hardware</span>
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-bold">Completed</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Computer & Mobile Repair</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Comprehensive repair and maintenance service for 30+ devices including hardware troubleshooting, software installation, and system diagnostics.
+            </p>
+            <div class="space-y-2 pt-4 border-t border-gray-200">
+              <p class="text-sm text-gray-600"><strong>Scope:</strong> Hardware diagnostics, component replacement, software configuration</p>
+              <p class="text-sm text-gray-600"><strong>Result:</strong> 98% success rate, highly satisfied clients</p>
+              <p class="text-sm text-gray-600"><strong>Duration:</strong> Ongoing service</p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Quick Links -->
-      <div>
-        <h4 class="font-semibold mb-4">Quick Links</h4>
-        <ul class="space-y-2">
-          <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-          <li><a href="portfolio.html" class="hover:text-yellow-400">Portfolio</a></li>
-          <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
-        </ul>
-      </div>
+        <!-- Project 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition transform border border-gray-200">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+            <img src="images/1080p%20Cameras%20Installation%20Los%20Angeles.jpeg" alt="CCTV Installation" class="h-48 w-full object-cover">
+          </div>
+          <div class="p-8">
+            <div class="flex gap-2 mb-4">
+              <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-bold">Security</span>
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-bold">Installation</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">CCTV System Installations</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Premier CCTV installations for residential properties with advanced surveillance coverage and 24/7 monitoring capability.
+            </p>
+            <div class="space-y-2 pt-4 border-t border-gray-200">
+              <p class="text-sm text-gray-600"><strong>Scope:</strong> Camera installation, DVR setup, system configuration & testing</p>
+              <p class="text-sm text-gray-600"><strong>Result:</strong> 15+ installations across residential properties</p>
+              <p class="text-sm text-gray-600"><strong>Technology:</strong> HD Cameras, DVR Systems, Networking</p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Social Links -->
-      <div>
-        <h4 class="font-semibold mb-4">Follow Me</h4>
-        <div class="flex flex-col space-y-2 items-center md:items-start">
-          <a href="#" class="hover:text-yellow-400"><i class="fab fa-facebook"></i> Alvinpofficial</a>
-          <a href="https://x.com/AlvinParsaloi" class="hover:text-yellow-400"><i class="fab fa-twitter"></i> @alvinpofficial</a>
-          <a href="https://www.instagram.com/alvin_sarisar/" class="hover:text-yellow-400"><i class="fab fa-instagram"></i> alvin_sarisar</a>
-          <a href="https://github.com/alvinp540" class="hover:text-yellow-400"><i class="fab fa-github"></i> alvinp540</a>
-          <a href="https://linkedin.com/in/alvin-parsaloi-311b08266" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i> alvinsarisar</a>
+        <!-- Project 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition transform border border-gray-200">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+            <img src="images/electricfence.jpeg" alt="Electric Fence" class="h-48 w-full object-cover">
+          </div>
+          <div class="p-8">
+            <div class="flex gap-2 mb-4">
+              <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-xs font-bold">Electrical</span>
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-bold">Security</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Electric Fence Projects</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Designed and installed electric fence systems for residential security with proper energizer integration and safety protocols.
+            </p>
+            <div class="space-y-2 pt-4 border-t border-gray-200">
+              <p class="text-sm text-gray-600"><strong>Scope:</strong> Energizer installation, conductor configuration, safety testing</p>
+              <p class="text-sm text-gray-600"><strong>Result:</strong> 12+ systems deployed successfully</p>
+              <p class="text-sm text-gray-600"><strong>Technology:</strong> Energizers, High-Voltage Systems, Grounding</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-3 transition transform border border-gray-200">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+            <img src="images/softwareproj.jpeg" alt="Software Projects" class="h-48 w-full object-cover">
+          </div>
+          <div class="p-8">
+            <div class="flex gap-2 mb-4">
+              <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-bold">Software</span>
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-xs font-bold">In Progress</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Software Engineering Projects</h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Currently pursuing Software Engineering, working on web applications and programming solutions using modern frameworks.
+            </p>
+            <div class="space-y-2 pt-4 border-t border-gray-200">
+              <p class="text-sm text-gray-600"><strong>Scope:</strong> Full-stack development, responsive design, backend integration</p>
+              <p class="text-sm text-gray-600"><strong>Status:</strong> Active development</p>
+              <p class="text-sm text-gray-600"><strong>Technology:</strong> JavaScript, React, Tailwind CSS</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Footer Bottom -->
-    <div class="text-center text-sm mt-8">
-      &copy; 2025 Saritech Solutions Ltd. All rights reserved.
+  <!-- Skills Highlight -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Technical Competencies</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg hover:shadow-xl transition">
+          <i class="fas fa-tools text-4xl text-blue-600 mb-4"></i>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Hardware & Repair</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>✓ Computer Repair (95%)</li>
+            <li>✓ Mobile Device Service</li>
+            <li>✓ CCTV Installation (90%)</li>
+            <li>✓ Electric Fencing (88%)</li>
+          </ul>
+        </div>
+
+        <div class="p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-lg hover:shadow-xl transition">
+          <i class="fas fa-code text-4xl text-purple-600 mb-4"></i>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Software Development</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>✓ Web Development (90%)</li>
+            <li>✓ React & Frameworks (75%)</li>
+            <li>✓ System Design (80%)</li>
+            <li>✓ Problem Solving (85%)</li>
+          </ul>
+        </div>
+
+        <div class="p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg hover:shadow-xl transition">
+          <i class="fas fa-bolt text-4xl text-green-600 mb-4"></i>
+          <h3 class="text-2xl font-bold text-gray-900 mb-3">Electrical Systems</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>✓ Circuit Design & Analysis</li>
+            <li>✓ Power Systems</li>
+            <li>✓ Electrical Diagnostics (82%)</li>
+            <li>✓ Safety & Compliance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-12 mb-8 pb-8 border-b border-gray-800">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-2">Alvin Sarisar</h3>
+          <p class="text-gray-400">Software & Electrical Engineer | Building smart solutions</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-lg">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+            <li><a href="portfolio.html" class="hover:text-blue-400 transition">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4 text-lg">Connect</h4>
+          <div class="flex gap-4 text-2xl">
+            <a href="https://github.com/alvinp540" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/alvin-parsaloi-311b08266" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/AlvinParsaloi" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/alvin_sarisar/" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Alvin Sarisar. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
